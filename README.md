@@ -17,11 +17,11 @@ git clone https://github.com/Nitesh-vaidyanath/awss3.git
 
 Before running script please run "aws configure" 
 
-Linux and OSX user can "source awss3/bin/activate" to activate virtual environment or use absoulte path of python while exectuing.  All the required modules have been installed in virtual environment.
+OSX user can "source virtenv/bin/activate" and Linux user can use "source virtenv-linux/bin/activate" to activate virtual environment or use absoulte path of python while exectuing.  All the required modules have been installed in virtual environment.
   - awscli
   
 Run:
-  From the repository folder run "awss3/bin/python  awss3info.py"
+  From the repository folder run "virtenv-linux/bin/python  awss3info.py"
   
 
 

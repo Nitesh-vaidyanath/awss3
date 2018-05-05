@@ -1,5 +1,4 @@
 import unittest
-import mock 
 import awss3info
 
 class awsS3Test(unittest.TestCase):
