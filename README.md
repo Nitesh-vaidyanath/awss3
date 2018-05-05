@@ -1,7 +1,9 @@
 # awss3
 AWS S3 storage analysis tool Beta version.
 
-Tool gives below information of a bucket
+## Tool Output
+
+Tool gives below information of a s3 bucket
 1. Bucket name
 2. Creation date of the bucket
 3. Number of files
@@ -10,6 +12,11 @@ Tool gives below information of a bucket
 6. Cost anayalsis (Only storage)
 7. Region 
 
+### Prerequisites
+
+awscli 
+
+### Installing
 
 Clone repository:
 
@@ -22,6 +29,7 @@ OSX user can "source virtenv/bin/activate" and Linux user can use "source virten
   
 Run:
   From the repository folder run "virtenv-linux/bin/python  awss3info.py"
+```
   (virtenv-linux) ubuntu@ip-172-31-42-233:~/awss3/aws-s3$ virtenv-linux/bin/python  awss3info.py
 {
     "<Name of the S3 bucket>": {
@@ -33,10 +41,12 @@ Run:
         "size": "570539031"
     }
 }
+```
 
-
+## Running the tests
   
 Unit Test Case:
+```
   (virtenv-linux) ubuntu@ip-172-31-42-233:~/awss3/aws-s3$ python unittestcase.py
 .{'test': {'EstimatedPrice': 8652.799999999977, 'lastModifiedTimeStamp': '2018-04-17 21:58:18', 'createdDate': '2018-04-17 21:57:27', 'region': 'ap-south-1', 'fileCount': '1', 'size': '384829069721599'}}
 .{'test': {'EstimatedPrice': 14694.399999999958, 'lastModifiedTimeStamp': '2018-04-17 21:58:18', 'createdDate': '2018-04-17 21:57:27', 'region': 'ap-south-1', 'fileCount': '1', 'size': '659706976665598'}}
@@ -46,5 +56,5 @@ Unit Test Case:
 Ran 4 tests in 0.002s
 
 OK
-
+```
  
