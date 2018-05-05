@@ -22,7 +22,29 @@ OSX user can "source virtenv/bin/activate" and Linux user can use "source virten
   
 Run:
   From the repository folder run "virtenv-linux/bin/python  awss3info.py"
-  
+  (virtenv-linux) ubuntu@ip-172-31-42-233:~/awss3/aws-s3$ virtenv-linux/bin/python  awss3info.py
+{
+    "<Name of the S3 bucket>": {
+        "EstimatedPrice": 0.012221185223199427,
+        "lastModifiedTimeStamp": "2017-07-27 22:57:16",
+        "createdDate": "2017-07-25 20:20:26",
+        "region": "us-west-2",
+        "fileCount": "2577",
+        "size": "570539031"
+    }
+}
 
+
+  
+Unit Test Case:
+  (virtenv-linux) ubuntu@ip-172-31-42-233:~/awss3/aws-s3$ python unittestcase.py
+.{'test': {'EstimatedPrice': 8652.799999999977, 'lastModifiedTimeStamp': '2018-04-17 21:58:18', 'createdDate': '2018-04-17 21:57:27', 'region': 'ap-south-1', 'fileCount': '1', 'size': '384829069721599'}}
+.{'test': {'EstimatedPrice': 14694.399999999958, 'lastModifiedTimeStamp': '2018-04-17 21:58:18', 'createdDate': '2018-04-17 21:57:27', 'region': 'ap-south-1', 'fileCount': '1', 'size': '659706976665598'}}
+.{'test': {'EstimatedPrice': 1254.399999999977, 'lastModifiedTimeStamp': '2018-04-17 21:58:18', 'createdDate': '2018-04-17 21:57:27', 'region': 'ap-south-1', 'fileCount': '1', 'size': '53876069761023'}}
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
 
  
